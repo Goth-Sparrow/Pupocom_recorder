@@ -1,0 +1,1 @@
+python -u -X utf8 "main.py"
