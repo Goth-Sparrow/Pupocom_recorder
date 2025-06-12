@@ -35,10 +35,10 @@ def check_room():
 
 #数据存储函数
 def save_room(room_checked):
-    time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    t = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     #调用datetime方法获取当前时间
     with open("roomdata.txt","a",encoding="utf-8") as file:
-        file.write(f"{time}：你进入了房间，房间号为{room_checked}\n")
+        file.write(f"{t}：你进入了房间，房间号为{room_checked}\n")
     #写入roomdata.txt文件，追加模式，utf-8编码
 
 #入口函数
